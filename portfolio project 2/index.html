@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saili's Portfolio </title>
+    <link rel="stylesheet"href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a2414762b8.js" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+</head>
+<body>
+    <div id="header">
+      <div class="container">
+        <nav>
+            <img src="./images/logo3.png" class="logo">
+            <ul>
+                <li> <a href="#header"> Home</a></li>
+                <li> <a href="#about"> About me</a></li>
+                <li> <a href="#services"> Services</a></li>
+                <li> <a href="#portfolio"> Portfolio </a></li>
+                <li> <a href="#contact"> Contact me </a></li>
+        
+            
+            </ul>
+
+        </nav>
+        <div 
+        <div class ="header-text">
+            <p> Data Scientist </p>
+            <h1> Hello , I'm <span>Saili Rao</span> <br> from India </h1>
+        </div>
+      </div>
+    </div>
+    <!--ABOUT-------------------------------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+            <div class="about-col-1">
+                <img src="./images/saili2.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me </h1>
+                    <p>Currently working as a software engineer at Neosoft Technologies . 
+                        Machine learning and data science enthusiast .
+                    </p>
+                    <!-- Tab links -->
+                    <div class="tab">
+                        <button class="tablinks" onclick="openCity(event, 'Skills')">Skills</button>
+                        <button class="tablinks" onclick="openCity(event, 'Experience')">Experience</button>
+                        <button class="tablinks" onclick="openCity(event, 'Education')">Education</button>
+                      </div>
+                      
+                      <div id="Skills" class="tabcontent">
+                        <h3>SKILLS</h3>
+                        <p>C++</p>
+                        <br>
+                        <p>Python</p>
+                        <br>
+                        <p>Java</p>
+                        <br>
+                        <p> HTML CSS</p>
+                        <br>
+                      </div>
+                      
+                      <div id="Experience" class="tabcontent">
+                        <h3>EXPERIENCE</h3>
+                        <p>2021-Current <br> Software Engineer-Neosoft Technologies</p>
+                        <br>
+                        <p>2019-2020<br> Intern - Synetic Software</p>
+                        <br>
+                
+                    
+                      </div>
+                      
+                      <div id="Education" class="tabcontent">
+                        <h3>EDUCATION</h3>
+                        <p>2019-2022<br>Bachelor's of Information Technology</p>
+                        <br>
+                        <p>2016-2018<br>HSC</p>
+                        <br>
+                        <p>2015-2016 <br> SSC</p>
+                        <br>
+                    
+                      </div>
+                      
+                      <script>
+                      function openCity(evt, cityName) {
+                        var i, tabcontent, tablinks;
+                        tabcontent = document.getElementsByClassName("tabcontent");
+                        for (i = 0; i < tabcontent.length; i++) {
+                          tabcontent[i].style.display = "none";
+                        }
+                        tablinks = document.getElementsByClassName("tablinks");
+                        for (i = 0; i < tablinks.length; i++) {
+                          tablinks[i].className = tablinks[i].className.replace(" active", "");
+                        }
+                        document.getElementById(cityName).style.display = "block";
+                        evt.currentTarget.className += " active";
+                      }
+                      </script>
+                     </div>
+                 </div>
+           </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!----- Services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list"> 
+                <div>
+                 <i class="fa-solid fa-code"></i>
+                    <h2>WEB DEVELOPMENT </h2>
+                    <p> Using Html,Css and Javascript .
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-pencil"></i>
+                    <h2>MACHINE LEARNING </h2>
+                    <p> Machine learning projects using python .
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>DATA ANALYSIS</h2>
+                     <p> Data Analysis in jupiternotebook.
+
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--------------------------PORTFOLIO ------------------------------------------------------------>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work </h1>
+            <div class="work-list">
+                <div class="work">
+                <img src="./images/work-1.png">
+                <div class="layer">
+                    <h3>ML STOCK APPLICATION</h3>
+                    <p>Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Tempore rerum 
+                        numquam unde ut aperiam esse, excepturi veniam ex. Inventore, adipisci?
+                     </p>
+                     <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+                
+            </div>
+            <div class="work">
+                <img src="./images/work-2.png">
+            </div>
+            <div class="work">
+                <img src="./images/work-3.png">
+            </div>
+            <div class="layer">
+                <h3>ML STOCK APPLICATION</h3>
+                <p> Portfolio management using time series . Applied Data Science and Machine Learning .
+                 </p>
+                 <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+            <div class="layer">
+                <h3>JAVA CALORIE TRACKER APP</h3>
+                <p>Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit. Tempore rerum 
+                    numquam unde ut aperiam esse, excepturi veniam ex. Inventore, adipisci?
+                 </p>
+                 <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+            <div class="layer">
+                <h3>IOT PROJECT</h3>
+                <p>Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit. Tempore rerum 
+                    numquam unde ut aperiam esse, excepturi veniam ex. Inventore, adipisci?
+                 </p>
+                 <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-------------CONTACT ME---------------------------------------------------------------------------------------------------------->
+<div id = "contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me </h1>
+                <p><i class="fa-solid fa-envelope"></i> sailirao2016@gmail.com</p>
+                <p> <i class="fa-solid fa-phone"></i>9322211953</p>
+                <br>
+                <br>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <br>
+                <br>
+                <a href="./images/my-cv.pdf" download  class="btn btn2">Download CV </a>
+            </div>
+            <div class="contact-right"></div>
+            <form name="myForm" action="/file.php" onsubmit="return validateForm()" method="post">
+                <table class="form-style">
+                   <tr>
+                      <td>
+                         <label>
+                            Your name <span class="required">*</span>
+                         </label>
+                      </td>
+                      <td>
+                         <input type="text" name="name" class="long"/>
+                         <span class="error" id="errorname"></span>
+                      </td>
+                   </tr>
+                   <tr>
+                      <td>
+                         <label>
+                           Your email address <span class="required">*</span>
+                         </label>
+                      </td>
+                      <td>
+                         <input type="email" name="email" class="long"/>
+                         <span class="error" id="erroremail"></span>
+                      </td>
+                   </tr>
+                   <tr>
+                      <td>
+                         <label>
+                            Message <span class="required">*</span>
+                         </label>
+                      </td>
+                      <td>
+                         <textarea name="message" class="long field-textarea"></textarea>
+                         <span class="error" id="errormsg"></span>
+                      </td>
+                   </tr>
+                   <tr>
+                      <td></td>
+                      <td>
+                         <input type="submit" value="Send">      
+                         <input type="reset" value="Reset"> 
+                      </td>
+                   </tr>
+                </table>
+             </form>
+          </body>
+       </html>
+        </div>
+</div>
+<div class="copyright">
+    <p> Copyright @ Saili . Made by Saili </p>
+</div>
+</div>
+ <script>
+        var tablinks = document.getelementsByClassName("tab-links");
+        var tabcontents = document.getelementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                    
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                    
+
+                }
+                event.currentTarget.classList.add("active-tab");
+                document.getElementById(tabname).classsList.add("")
+                
+
+            }
+
+            function validateForm()                                    
+{ 
+    var name = document.forms["myForm"]["name"];               
+    var email = document.forms["myForm"]["email"];    
+    var message = document.forms["myForm"]["message"];   
+   
+    if (name.value == "")                                  
+    { 
+        document.getElementById('errorname').innerHTML="Please enter a valid name";  
+        name.focus(); 
+        return false; 
+    }else{
+        document.getElementById('errorname').innerHTML="";  
+    }
+       
+    if (email.value == "")                                   
+    { 
+        document.getElementById('erroremail').innerHTML="Please enter a valid email address"; 
+        email.focus(); 
+        return false; 
+    }else{
+        document.getElementById('erroremail').innerHTML="";  
+    }
+   
+    if (email.value.indexOf("@", 0) < 0)                 
+    { 
+        document.getElementById('erroremail').innerHTML="Please enter a valid email address"; 
+        email.focus(); 
+        return false; 
+    } 
+   
+    if (email.value.indexOf(".", 0) < 0)                 
+    { 
+        document.getElementById('erroremail').innerHTML="Please enter a valid email address"; 
+        email.focus(); 
+        return false; 
+    } 
+   
+    if (message.value == "")                           
+    {
+        document.getElementById('errormsg').innerHTML="Please enter a valid message"; 
+        message.focus(); 
+        return false; 
+    }else{
+        document.getElementById('errormsg').innerHTML="";  
+    }
+   
+    return true; 
+}
+    </script>
+
+    
+</body>
+</html>
+
